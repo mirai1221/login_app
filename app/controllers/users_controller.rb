@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
     if user.save
       session[:user_id] = user.id
-      redirect_to user_path, notice: "ログインに成功しています。"
+      redirect_to user_path, notice: "登録に成功しています。"
     else
       render :new
     end
